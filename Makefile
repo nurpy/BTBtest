@@ -2,8 +2,8 @@
 
 test: victim attacker
 	echo "Testing"
-	taskset -c 0 ./victim &
 	taskset -c 0 ./attacker &
+	taskset -c 0 ./victim &
 victim: 
 	gcc -c victim.c -o victim.o
 	gcc victim.o -T linkerScriptVictim.ld -o victim

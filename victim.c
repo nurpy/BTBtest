@@ -7,7 +7,7 @@
 void funcCall(){
 
 for(int i = 0 ; i < 100000; i++){
-	__asm__ ( "F1: jmp L1;"
+	__asm__ ( "F1: jmp L1;" // code with branches
 		"F2: jmp L2;"
 		"F3: jmp L3;"
 		"F4: jmp L4;"

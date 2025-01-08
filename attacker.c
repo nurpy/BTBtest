@@ -8,7 +8,7 @@
 void funcCall(){
 
 for(int i = 0 ; i < 100000 ; i++){
-__asm__ ( 
+__asm__ (  // nop code
 		"nop;"
 		"nop;"
 		"nop;"
